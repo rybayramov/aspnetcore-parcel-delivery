@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  authdb:
+    image: postgres
+
+  pgadmin:
+    image: dpage/pgadmin4
+
+  portainer:
+    image: portainer/portainer-ce
+
+  authapi:
+    image: ${DOCKER_REGISTRY-}authapi
+    build:
+      context: .
+      dockerfile: Services/Authorization/AuthAPI/Dockerfile
+
+volumes:
+  portainer_data:
+  postgres_data:
+  pgadmin_data:
