@@ -44,3 +44,10 @@ services:
       - authdb
     ports:
       - "8000:80"
+
+  apigateway:
+    container_name: apigateway
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8001:80"

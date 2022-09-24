@@ -14,7 +14,13 @@ services:
     image: ${DOCKER_REGISTRY-}authapi
     build:
       context: .
-      dockerfile: Services/Authorization/AuthAPI/Dockerfile
+      dockerfile: Authorization/AuthenticationWebApi/Dockerfile
+
+  apigateway:
+    image: ${DOCKER_REGISTRY-}apigateway
+    build:
+      context: .
+      dockerfile: ApiGateway/Dockerfile
 
 volumes:
   portainer_data:
