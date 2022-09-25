@@ -43,12 +43,13 @@ There is a couple of microservices which implemented  parcel delivery  modules o
 - Consuming  **RabbitMQ**  OrderCheckout event queue with using  **MassTransit-RabbitMQ**  Configuration
 - **Postgre database**  connection and containerization
 
-**API Gateway Ocelot Microservice**
+**API Gateway Ocelot JWT Authentication Microservice**
 
 - Implement  **API Gateways with Ocelot**
 - Sample microservices/containers to reroute through the API Gateways
 - Run multiple different  **API Gateway/BFF**  container types
-- Getting JWTClaims to Headers Tranformation
+- Role based Authorization in Ocelot API Gateway with tranformation Claims to request headers 
+- Authentication Web Api with user login method which returns rol based JWT access token 
 
 **Microservices Cross-Cutting Implementations**
 
