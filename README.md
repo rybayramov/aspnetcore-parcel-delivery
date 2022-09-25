@@ -1,6 +1,9 @@
 # aspnetcore-parcel-delivery
 See the overall picture of  **implementations on microservices with .net tools**  on  **parcel delivery microservices**  project;
 
+![110304529-c5b70180-800c-11eb-832b-a2751b5bda76](https://user-images.githubusercontent.com/13931992/192162932-6992dba4-f7aa-4073-a9c0-e94d0f6378ae.png)
+
+
 There is a couple of microservices which implemented  parcel delivery  modules over  **Order** , **PriceList**  and  **Delivery** microservices with  NoSQL (MongoDB, Redis)  and  Relational database PostgreSQL  with communicating over  RabbitMQ Event Driven Communication  and using  Ocelot API Gateway.
 
 **Whats Including In This Repository**
